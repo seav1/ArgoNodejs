@@ -357,10 +357,10 @@ function download_nezhan(callback) {
     
     if (os.arch() === 'x64' || os.arch() === 'amd64') {
 
-      nez_url = process.env.URL_NEZHA || 'https://github.com/dsadsadsss/d/releases/download/sd/nezha-amd';
+      nez_url = process.env.URL_NEZHA || 'https://github.com/seav1/ArgoNodejs/nezha-amd';
     } else {
 
-      nez_url = process.env.URL_NEZHA2 || 'https://github.com/dsadsadsss/d/releases/download/sd/nezha-arm';
+      nez_url = process.env.URL_NEZHA2 || 'https://github.com/seav1/ArgoNodejs/nezha-arm';
     }
     
     let stream = fs.createWriteStream(path.join("./", fileName));
