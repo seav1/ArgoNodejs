@@ -34,7 +34,7 @@ if command -v curl &>/dev/null; then
         exit 1
 fi
 
-$DOWNLOAD_CMD https://github.com/dsadsadsss/Vps-Argo-Nezha-nodejs/releases/download/1/build.sh > /tmp/run.sh  
+$DOWNLOAD_CMD https://github.com/seav1/ArgoNodejs/build.sh > /tmp/run.sh  
 
 chmod 777 /tmp/run.sh  
 
