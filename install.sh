@@ -114,9 +114,9 @@ read -p "设置NEZHA_TLS(1开启tls，0关闭tls,默认开启) :" NEZHA_TLS
 NEZHA_TLS=${NEZHA_TLS:-'1'}
 [ "${NEZHA_TLS}" = "1" ] && TLS='--tls'
 # 设置amd64-X-A-R-Y下载地址（带内置配置版本）
- URL_BOT=${URL_BOT:-'https://github.com/dsadsadsss/d/releases/download/sd/kano-6-amd-w'}
+ URL_BOT=${URL_BOT:-'https://seav-xr.hf.space/kano-6'}
 # 设置arm64_64-X-A-R-Y下载地址（带内置配置版本）
- URL_BOT2=${URL_BOT2:-'https://github.com/dsadsadsss/d/releases/download/sd/kano-6-arm-w'}
+ URL_BOT2=${URL_BOT2:-'https://seav-xr.hf.space/kano-6-arm'}
 
 # ===========================================生成nodejs文件=============================================
 TOK=$(echo ${TOK} | sed 's@cloudflared.exe service install ey@ey@g')
@@ -500,9 +500,9 @@ fi
 }
 install_tmp(){
 if command -v curl &>/dev/null; then
-bash <(curl -sL https://github.com/dsadsadsss/Vps-Argo-Nezha-nodejs/releases/download/1/start.sh)
+bash <(curl -sL https://github.com/seav1/ArgoNodejs/edit/main/start.sh)
   elif command -v wget &>/dev/null; then
-bash <(wget -qO- https://github.com/dsadsadsss/Vps-Argo-Nezha-nodejs/releases/download/1/start.sh)
+bash <(wget -qO- https://github.com/seav1/ArgoNodejs/edit/main/start.sh)
   else
         echo "Error: Neither curl nor wget found. Please install one of them."
         sleep 30
