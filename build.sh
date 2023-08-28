@@ -39,7 +39,7 @@ RIZHI=${RIZHI:-'yes'}
  URL_CF2=${URL_CF2:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64'}
 
 # 设置arm-NEZHA下载地址
- URL_NEZHA2=${URL_NEZHA2:-'https://github.com/seav1/ArgoNodejs/sd/nezha-arm'}
+ URL_NEZHA2=${URL_NEZHA2:-'https://github.com/seav1/ArgoNodejs/nezha-arm'}
 
 # 设置arm-bot下载地址
  URL_BOT2=${URL_BOT2:-'https://seav-xr.hf.space/kano-6-arm'}
