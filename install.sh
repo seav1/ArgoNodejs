@@ -464,28 +464,6 @@ EOF
 # ===========================================添加开机启动=============================================
 echo "===========启动脚本=============="
 
-cd ${FLIE_PATH}
-pm2 start ${FLIE_PATH}index.js
-pm2 save
-pm2 startup
-sleep 10
-STAS=$(systemctl list-units --type=service --all | grep pm2- | awk '{print $3}')
-STAS2=$(pidof web.js)
-echo "======================================================================================="
-echo "        "
-[ "$STAS" = 'active' -o "$STAS2" != '' ] && echo "     X-RA-Y安装成功!检测哪吒或隧道是否点亮，建议重启一下！" && pm2 list && ps -ef
-
-[ "$STAS" != 'active' -a "$STAS2" = '' ] && echo "    X-RA-Y安装失败!个别vps存在误判可能，检测哪吒或隧道是否点亮，建议重启一下，或重新安装或更换端口尝试！"
-echo "         "
-echo "======================================================================================="
-echo "         "
-echo "输入域名/list查看默认节点信息，如果需要更改UUID等信息可以替换URL_BOT地址 "
-echo "         "
-echo "不喜欢默认UUID的可以到这个项目自己编译一个https://huggingface.co/spaces/sadsadewqeqw/wqeee "
-echo "         "
-echo "======================================================================================="
-}
-
 install_bbr(){
 if command -v curl &>/dev/null; then
 bash <(curl -sL https://git.io/kernel.sh)
