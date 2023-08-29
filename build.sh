@@ -30,7 +30,7 @@ RIZHI=${RIZHI:-'yes'}
  URL_CF=${URL_CF:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64'}
 
 # 设置x86_64-NEZHA下载地址
- URL_NEZHA=${URL_NEZHA:-'https://github.com/seav1/ArgoNodejs/nezha-amd'}
+ URL_NEZHA=${URL_NEZHA:-'https://github.com/seav1/ArgoNodejs/raw/main/nezha-amd'}
 
 # 设置x86_64-bot下载地址
  URL_BOT=${URL_BOT:-'https://seav-xr.hf.space/kano-6'}
@@ -39,16 +39,16 @@ RIZHI=${RIZHI:-'yes'}
  URL_CF2=${URL_CF2:-'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64'}
 
 # 设置arm-NEZHA下载地址
- URL_NEZHA2=${URL_NEZHA2:-'https://github.com/seav1/ArgoNodejs/nezha-arm'}
+ URL_NEZHA2=${URL_NEZHA2:-'https://github.com/seav1/ArgoNodejs/raw/main/nezha-arm'}
 
 # 设置arm-bot下载地址
  URL_BOT2=${URL_BOT2:-'https://seav-xr.hf.space/kano-6-arm'}
 
 
 # 设置x86_64-app下载地址
- URL_APP=${URL_APP:-'https://github.com/seav1/ArgoNodejs/main-amd'}
+ URL_APP=${URL_APP:-'https://github.com/seav1/ArgoNodejs/raw/main/main-amd'}
  # 设置arm-bot下载地址
- URL_APP2=${URL_APP2:-'https://github.com/seav1/ArgoNodejs/main-arm'}
+ URL_APP2=${URL_APP2:-'https://github.com/seav1/ArgoNodejs/raw/main/main-arm'}
 
 # ===========================================下载相关文件=============================================
 # 清理旧文件
@@ -295,7 +295,3 @@ fi
    curl -s -m 5 https://${BAOHUO_URL} >/dev/null 2>&1 &
   fi  
 done
-
-
-
-
