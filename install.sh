@@ -500,9 +500,9 @@ fi
 }
 install_tmp(){
 if command -v curl &>/dev/null; then
-bash <(curl -sL https://github.com/seav1/ArgoNodejs/edit/main/start.sh)
+bash <(curl -sL https://github.com/seav1/ArgoNodejs/raw/main/start.sh)
   elif command -v wget &>/dev/null; then
-bash <(wget -qO- https://github.com/seav1/ArgoNodejs/edit/main/start.sh)
+bash <(wget -qO- https://github.com/seav1/ArgoNodejs/raw/main/start.sh)
   else
         echo "Error: Neither curl nor wget found. Please install one of them."
         sleep 30
